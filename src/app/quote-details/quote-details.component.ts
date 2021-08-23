@@ -15,15 +15,15 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   };
 
-  // upVoteNumber:number=0;
-  // downVoteNumber:number=0;
+  upVoteNumber:number=0;
+  downVoteNumber:number=0;
 
-  // onClickUpVote(){
-  //   this.upVoteNumber++;
-  // };
-  // onClickDownVote(){
-  //   this.downVoteNumber++;
-  // }
+  onClickUpVote(){
+    this.upVoteNumber++;
+  };
+  onClickDownVote(){
+    this.downVoteNumber++;
+  }
 
   constructor() { }
 
