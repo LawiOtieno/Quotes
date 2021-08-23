@@ -36,12 +36,16 @@
             <div class="card mb-5">
               <div class="card-header">
                 <h3>
-                  {{ quotes.content }}<button class="btn btn-outline-info m-1 btn-sm" id="see-more" (click)='toggleDetails(i)'>See More</button>
+                  "{{ quotes.content }}"
+                  <button class="btn btn-outline-info m-1 btn-sm" id="see-more" (click)='toggleDetails(i)'>See More</button>
                 </h3>
               </div>
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                  <p>Posted on: <strong>{{quotes.myDate|date}}</strong></p>
+                  <p>
+                      Posted on: <u><em>{{quotes.myDate|date}}</em></u>
+                      <span class="bg-secondary rounded px-2" id="see-more">{{ quotes.myDate|dateCount }} days ago.</span>
+                  </p>
                   <footer class="blockquote-footer">
                     <app-quote-details (isComplete)='completeQuote($event, i)' *ngIf='quotes.showQuotes' [quotes]='quotes'>
                     </app-quote-details>
