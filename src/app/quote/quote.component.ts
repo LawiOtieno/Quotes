@@ -13,9 +13,9 @@ export class QuoteComponent implements OnInit {
     new Quote (1, 'Coding is the language of the future, and every girl should learn it. As I have learned from watching girls grow and learn in our classrooms, coding is fun, collaborative and creative.', 'Reshma Saujani', 'Kingi Elijah', new Date(2021,8,22)),
   ];
 
-  // toggleDetails(index){
-  //   this.quotes[index].showQuotes = !this.quotes[index].showQuotes
-  // };
+  toggleDetails(index){
+    this.quotes[index].showQuotes = !this.quotes[index].showQuotes
+  };
 
   // completeQuote(isComplete, index){
   //   if (isComplete){
