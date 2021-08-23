@@ -30,8 +30,8 @@
         </div>
         <div class="form-control">
             <label for="complete">Date Posted:</label>
-            <input type="date" id="complete" [(ngModel)]="newQuote.myDate" name="myDate" #myDate="ngModel" required>
-            <div [hidden]="myDate.valid || myDate.pristine" class="alert alert-danger">
+            <input type="date" id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                 <p>Date of posting is required !!!</p>
             </div>
         </div>

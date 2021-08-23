@@ -43,8 +43,8 @@
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
                   <p>
-                      Posted on: <u><em>{{quotes.myDate|date}}</em></u>
-                      <span class="bg-secondary rounded px-2" id="see-more">{{ quotes.myDate|dateCount }} days ago.</span>
+                      Posted on: <u><em>{{quotes.completeDate|date}}</em></u>
+                      <span class="bg-secondary rounded px-2" id="see-more">{{ quotes.completeDate|dateCount }} days ago.</span>
                   </p>
                   <footer class="blockquote-footer">
                     <app-quote-details (isComplete)='completeQuote($event, i)' *ngIf='quotes.showQuotes' [quotes]='quotes'>
@@ -76,12 +76,15 @@
                   <h3><strong><span class="text-danger">Code</span><span class="text-success">rs</span> <span class="text-warning">Quote</span><span class="text-success">s</span></strong></h3>
                     <p><em>The only site with <strong>Quotes</strong> that make</em></p>
                     <p><em>coding a big fun!!!</em></p>
+                    <br>
+                    <p><em>Everybody should learn at least the basic</em></p>
+                    <p><em>coding languages such as HTML and CSS</em></p>
                 </div>
 
                 <div>
                   <!-- Web Statistics Here -->
-                   <a href='http://www.freevisitorcounters.com'>freevisitorcounterss Homepage</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=0f4aee70719d9f5ef118384dfa344e600c81550a'></script>
-                   <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/859088/t/0"></script>
+                   <!-- <a href='http://www.freevisitorcounters.com'>freevisitorcounterss Homepage</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=0f4aee70719d9f5ef118384dfa344e600c81550a'></script>
+                   <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/859088/t/0"></script> -->
                 </div>
             </div>
 
@@ -94,7 +97,7 @@
                     <p class=""><a href="index.html"><strong>Home</strong></a></p>
                     <p><a href="###"><strong>Quotes</strong></a></p>
                     <p><a href="###"><strong>Add Quotes</strong></a></p>
-                    <p><a href="https://streetgm.gumroad.com/" target="_blank"><i class="fas fa-shopping-cart"></i> <strong>Shop</strong></a></p>                                             
+                    <p><a href="https://streetgm.gumroad.com/" target="_blank"><i class="fas fa-shopping-cart"></i> <strong> Shop</strong></a></p>                                             
                 </div>
             </div>
 
@@ -105,22 +108,22 @@
                 </div>
                 <div class="row">
                     <div class="col" id="footer-links">
-                        <p><a href="https://www.facebook.com/streetgrandmaster" target="_blank"><span id="socialMedia"><i class="fab fa-facebook-square"></i></span> <strong>Facebook</strong></a></p>
-                        <p><a href="https://www.instagram.com/streetgrandmaster" target="_blank"><span id="socialMedia"><i class="fab fa-instagram-square"></i></span> <strong>Instagram</strong></a></p>
-                        <p><a href="https://www.twitter.com/LawiGrandmaster" target="_blank"><i class="fab fa-twitter-square"></i> <strong>Twitter</strong></a></p>
-                        <p><a href="https://www.linkedin.com/in/streetgrandmaster" target="_blank"><i class="fab fa-linkedin"></i> <strong>LinkedIn</strong></a></p>
+                        <p><a href="https://www.facebook.com/streetgrandmaster" target="_blank"><span id="socialMedia"><i class="fab fa-facebook-square"></i></span> <strong> Facebook</strong></a></p>
+                        <p><a href="https://www.instagram.com/streetgrandmaster" target="_blank"><span id="socialMedia"><i class="fab fa-instagram-square"></i></span> <strong> Instagram</strong></a></p>
+                        <p><a href="https://www.twitter.com/LawiGrandmaster" target="_blank"><i class="fab fa-twitter-square"></i> <strong> Twitter</strong></a></p>
+                        <p><a href="https://www.linkedin.com/in/streetgrandmaster" target="_blank"><i class="fab fa-linkedin"></i> <strong> LinkedIn</strong></a></p>
                     </div>
                     <div class="col" id="footer-links">
-                        <p><a href="https://www.quora.com/profile/Lawi-Otieno" target="_blank"><i class="fab fa-quora"></i> <strong>Quora</strong></a></p>
-                        <p><a href="https://www.pinterest.com/streetgrandmaster" target="_blank"><i class="fab fa-pinterest-square"></i> <strong>Pinterest</strong></a></p>
-                        <p><a href="https://www.reddit.com/user/streetgm" target="_blank"><i class="fab fa-reddit-square"></i> <strong>Reddit</strong></a></p>
-                        <p><a href="https://www.wa.me/254745610178" target="_blank"><i class="fab fa-whatsapp-square"></i> <strong>WhatsApp</strong></a></p>
+                        <p><a href="https://www.quora.com/profile/Lawi-Otieno" target="_blank"><i class="fab fa-quora"></i> <strong> Quora</strong></a></p>
+                        <p><a href="https://www.pinterest.com/streetgrandmaster" target="_blank"><i class="fab fa-pinterest-square"></i> <strong> Pinterest</strong></a></p>
+                        <p><a href="https://www.reddit.com/user/streetgm" target="_blank"><i class="fab fa-reddit-square"></i> <strong> Reddit</strong></a></p>
+                        <p><a href="https://www.wa.me/254745610178" target="_blank"><i class="fab fa-whatsapp-square"></i> <strong> WhatsApp</strong></a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="text-center pt-5" id="footer-links">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html"><strong><span class="text-danger">Code</span><span class="text-success">rs</span> <span class="text-warning">Quote</span><span class="text-success">s</span></strong>.</a> All Rights Reserved</p>
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html"><strong><span class="text-danger">Code</span><span class="text-success">rs</span> <span class="text-warning"> Quote</span><span class="text-success">s</span></strong>.</a> All Rights Reserved</p>
         </div>
     </div>
 </footer>
