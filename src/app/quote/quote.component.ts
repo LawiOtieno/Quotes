@@ -17,12 +17,12 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showQuotes = !this.quotes[index].showQuotes
   };
 
-  // completeQuote(isComplete, index){
-  //   if (isComplete){
-  //     let toDelete=confirm(`Are you you sure you want to delete  quote of: ${this.quotes[index].author} ?`)
-  //     this.quotes.splice(index,1);
-  //   }
-  // }
+  completeQuote(isComplete, index){
+    if (isComplete){
+      let toDelete=confirm(`Are you you sure you want to delete  quote of: ${this.quotes[index].author} ?`)
+      this.quotes.splice(index,1);
+    }
+  }
 
   // addNewQuote(quote){
   //   let quoteLength=this.quotes.length;
